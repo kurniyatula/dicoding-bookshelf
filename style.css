@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #264969;
+    color: white;
+    height: 80px;
+}
+
+.head_bar > h1 {
+    font-size: 24px;
+}
+
+.head_bar > img {
+    height: 40px;
+    margin: 0 22px 0 76px;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.search_section {
+    margin: 16px 0;
+    /* position: relative;
+    align-items: center;
+    justify-content: center; */
+    padding: 16px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.search_section > h2 {
+    color: cornflowerblue;
+}
+
+.search_section > form {
+    display: flex;
+}
+
+.search_section > form > #searchBookTitle {
+    position: relative;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #F4F4F4;
+    border: none;
+    height: 50px;
+    width: 100%;
+    margin-right: 10px;
+} 
+
+.search_section > form > #searchSubmit {
+    background-color: #264969;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+
+.search_section > form > button {
+    background-color: #264969;
+    background: url('icon/loupe.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.input_section > h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: #264969;
+    color: white;
+    border: 0;
+    border-radius: 7px;
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.input_section > form > button:hover {
+    background-color: #fff;
+    color: #264969;
+    border: 2px solid #264969;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 7px;
+    border: none;
+    background-color: #F4F4F4;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.input_section > form > .input > label {
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: #000;
+    font-weight: 400;
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf > h2 {
+    color: #000;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.book_shelf > .book_list > .book_item > h3 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.book_shelf > .book_list > .book_item > p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .complete {
+    background: url('icon/complete.svg');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.book_shelf > .book_list > .book_item > .not_complete {
+    background: url('icon/not_complete.svg');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.book_shelf > .book_list > .book_item > .delete {
+    background: url('icon/delete.svg');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    margin-left: 14px;
+}
+
+footer {
+    padding: 16px;
+    color: #fff;
+    background-color: #264969;
+    text-align: center;
+    font-weight: bold;
+}
